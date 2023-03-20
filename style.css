@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(90deg, rgb(218, 218, 156), rgb(228, 65, 114));
+}
+
+input {
+   display: block;
+   background-color: rgba(100, 99, 99, 0.324);
+   border: 0;
+   height: 50px;
+   width: 318px;
+   border-bottom: 2px solid orangered;
+   padding-left: 10px;
+   text-align: center;
+   
+}
+
+::-webkit-input-placeholder {
+  text-align: center;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15%;
+}
+
+.search-container .suggestions { 
+  bottom: 150px;
+  margin-top: 0;
+  max-height: 200px;
+  overflow-y: scroll;
+  width: 318px;
+}
+
+.suggestions::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+.suggestions::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+.suggestions::-webkit-scrollbar-thumb {
+  background-color: rgb(228, 65, 114);
+  outline: 1px solid slategrey;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li:hover {
+  background-color: rgba(222, 233, 133, 0.799);
+  font-weight: bold;
+}
+
+ul li {
+  display: block;
+  background-color: rgba(100, 99, 99, 0.324);
+  list-style-type: none;
+  padding: 10px;
+}
+
+button {
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    position: relative;
+    bottom: 75px;
+    left:110px;
+}
+
+label {
+  text-align: center;  
+}
+
